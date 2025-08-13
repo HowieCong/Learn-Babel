@@ -9,12 +9,12 @@ const c = [...b, 3, 4, 5];
 
 // Class definition
 // 类定义
-class DaWei {
+class Howie {
 }
 
 // Instantiate class
 // 实例化类
-new DaWei();
+new Howie();
 
 // API usage: filter even numbers
 // API 使用：过滤偶数
