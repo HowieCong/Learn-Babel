@@ -10,9 +10,9 @@ import presetEnv from "@babel/preset-env";
 // 导入 Node.js 的文件系统模块
 import fs from "node:fs";
 
-// Read the contents of test.js as a UTF-8 string
-// 以 UTF-8 字符串读取 test.js 文件内容
-const code = fs.readFileSync("./test.js", "utf-8");
+// Read the contents of 02_test.js as a UTF-8 string
+// 以 UTF-8 字符串读取 02_test.js 文件内容
+const code = fs.readFileSync("./02_test.js", "utf-8");
 
 // Transform the code using Babel with preset-env
 // 使用 Babel 和 preset-env 转换代码
