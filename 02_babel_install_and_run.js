@@ -16,14 +16,14 @@
 //   pnpm install --save-dev @babel/core @babel/cli @babel/preset-env
 
 // Step 3: Create Babel config file
-// Create .babelrc in project root with content:
-// {
-//   "presets": ["@babel/preset-env"]
+// Create babel.config.js in project root with content:
+// export default {
+//   presets: ['@babel/preset-env']
 // }
 // 步骤 3：创建 Babel 配置文件
-// 在项目根目录新建 .babelrc 文件，内容如下：
-// {
-//   "presets": ["@babel/preset-env"]
+// 在项目根目录新建 babel.config.js 文件，内容如下：
+// export default {
+//   presets: ['@babel/preset-env']
 // }
 
 // Step 4: Write ES6 sample code (this file)
