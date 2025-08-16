@@ -4,6 +4,8 @@
 
 本文件演示如何在 Webpack 项目中集成 Babel，适用于 pnpm 包管理器和 ESModule 语法的 babel.config.js（即 `export default`）。
 
+> **说明：本示例入口文件为 `src/index.js`，仅用于 Webpack 打包测试。请勿与 Vite 共用入口文件。**
+
 ---
 
 ## 1. 安装依赖
