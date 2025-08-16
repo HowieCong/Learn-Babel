@@ -4,56 +4,78 @@ Language : [🇺🇸 English](./README.md) | [🇨🇳 中文]
 
 ---
 
-本项目用于学习和实践 Babel 的相关知识，并分享学习 Babel 的经验和示例代码。
+本项目是一个系统化的 Babel 学习与实战仓库，适合零基础到进阶开发者。内容涵盖 Babel 基础原理、配置、常用插件、polyfill、与 Webpack/Vite 集成、实战案例等。
 
-## 项目简介
+## 项目结构
 
-Babel 是一个广泛使用的 JavaScript 编译器，可以将 ES6+ 代码转换为向后兼容的 JavaScript 语法，以便在当前和旧版本的浏览器或环境中运行。本仓库包含 Babel 的基础用法、配置方法、常见插件、转码示例等内容，适合初学者和进阶开发者参考。
+- `01_babel_intro.js`：Babel 是什么？理论与简单例子。
+- `02_babel_install_and_run.js`：Babel 安装与转译实操。
+- `03_babel_config_explain.md`：Babel 配置文件详解。
+- `04_babel_preset_plugin_demo.js`：preset-env 和常用插件实操。
+- `05_babel_polyfill_demo.js`：Babel Polyfill 使用场景与配置。
+- `06_babel_with_webpack_demo.md`：Babel 与 Webpack 集成实操。
+- `07_babel_with_vite_demo.md`：Babel 与 Vite 集成实操。
+- `babel.config.js`：全局 Babel 配置（ESModule 语法，适配 type: module）。
+- `webpack.config.js`：Webpack 配置（ESModule 语法，适配 type: module）。
+- `src/`：源码目录，包含 Webpack/Vite 各自入口文件（index.js/main.js）。
+- `dist/`：Webpack 打包输出目录。
+- `index.html`：Vite 项目入口页面。
+- 其他：各阶段转译产物、实验文件、依赖配置等。
 
-## 目录结构
+## 快速开始
 
-- `index.js`：主入口文件，包含 Babel 转码相关代码示例。
-- `test.js`：用于测试 Babel 配置和功能的脚本。
-- `package.json`：项目依赖和脚本配置。
-- `pnpm-lock.yaml`：依赖锁定文件。
-
-## 如何使用
-
-1. 克隆本仓库：
+1. 克隆仓库：
    ```bash
    git clone https://github.com/HowieCong/Learn-Babel.git
    cd Learn-Babel
    ```
-2. 安装依赖：
+2. 安装依赖（推荐 pnpm）：
    ```bash
    pnpm install
-   # 或者使用 npm install
+   # 或 npm install
    ```
-3. 运行示例或测试：
+3. 体验 Babel 转译：
    ```bash
-   node index.js
-   node test.js
+   npx babel 02_babel_install_and_run.js -o 02_babel_install_and_run.transpiled.js
+   node 02_babel_install_and_run.transpiled.js
+   ```
+4. 体验 Webpack 打包：
+   ```bash
+   pnpm exec webpack
+   node dist/bundle.js
+   ```
+5. 体验 Vite 启动：
+   ```bash
+   pnpm exec vite
+   # 浏览器访问 http://localhost:5173
    ```
 
-## Babel 学习内容
+## 学习路线与内容
 
-- Babel 的基本原理和作用
-- Babel 配置文件（如 .babelrc、babel.config.js）
-- 常用 Babel 插件和预设（presets）
-- 如何将 ES6+ 代码转译为兼容代码
-- 实践案例与常见问题
+1. Babel 基础原理与作用（见 01_babel_intro.js）
+2. Babel 安装与基本用法（见 02_babel_install_and_run.js）
+3. Babel 配置文件详解（见 03_babel_config_explain.md）
+4. preset-env 与常用插件实操（见 04_babel_preset_plugin_demo.js）
+5. Polyfill 场景与配置（见 05_babel_polyfill_demo.js）
+6. Babel 与 Webpack 集成（见 06_babel_with_webpack_demo.md，入口 src/index.js）
+7. Babel 与 Vite 集成（见 07_babel_with_vite_demo.md，入口 src/main.js）
+8. 更多实战与进阶内容可持续补充
 
-## 经验分享
+## 配置与实践说明
 
-- 建议先了解 ES6+ 新特性，再学习 Babel 的转译原理
-- 推荐结合实际项目配置 Babel，理解各插件和 preset 的作用
-- 遇到兼容性问题时，优先查阅 Babel 官方文档和社区经验
+- Babel 配置统一采用 `babel.config.js`，ESModule 语法，适配 `type: module`。
+- Webpack 配置采用 `webpack.config.js`，ESModule 语法。
+- Webpack 入口文件为 `src/index.js`，Vite 入口文件为 `src/main.js`，两者互不干扰。
+- Polyfill 推荐用 core-js + useBuiltIns: 'usage'，按需引入。
+- 所有实操均有详细注释和 markdown 教学文档，便于自学和查阅。
 
 ## 参考资料
 
 - [Babel 官方文档](https://babeljs.io/docs/en/)
 - [Babel GitHub](https://github.com/babel/babel)
+- [Webpack 官方文档](https://webpack.js.org/)
+- [Vite 官方文档](https://vitejs.dev/)
 
 ---
 
-欢迎大家一起学习和交流 Babel 相关经验！
+欢迎大家一起学习、实践和交流 Babel 相关经验！如有建议或疑问，欢迎 issue。
