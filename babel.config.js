@@ -1,5 +1,5 @@
-import myAdvancedBabelPlugin from "./src/my-advanced-babel-plugin.js";
+import aiAdvancedAuditPlugin from "./src/ai-advanced-audit-plugin.js";
 export default {
   presets: ["@babel/preset-env"],
-  plugins: [myAdvancedBabelPlugin]
+  plugins: [aiAdvancedAuditPlugin]
 }
