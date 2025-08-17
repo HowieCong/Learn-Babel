@@ -1,5 +1,3 @@
-# 11_babel_performance_debug_tips.md
-
 # Babel 性能优化与调试技巧（实操）
 
 本文件总结了 Babel 在实际项目中的性能优化方法与调试技巧，帮助你高效开发和定位问题。

@@ -1,4 +1,3 @@
-// 08_babel_plugin_easy_demo.js
 // 本文件演示如何编写并使用一个简单的 Babel插件
 
 // 步骤 1：新建插件文件（如 src/my-babel-plugin.js）

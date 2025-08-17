@@ -1,4 +1,3 @@
-// 09_babel_plugin_advanced_demo.js
 // 本文件演示如何编写并使用一个稍复杂的 Babel 插件
 
 // 步骤 1：新建插件文件（如 src/my-advanced-babel-plugin.js）

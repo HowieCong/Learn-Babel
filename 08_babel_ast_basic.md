@@ -1,5 +1,3 @@
-# 12_babel_ast_basic.md
-
 # Babel AST 基础与实操
 
 本文件帮助你快速入门 Babel 的 AST（抽象语法树）原理、常见节点类型、path 操作，并通过 AST Explorer 进行可视化学习和实操。
