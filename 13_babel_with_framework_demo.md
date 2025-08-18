@@ -45,7 +45,7 @@ npx babel src/hello.jsx -o src/hello.transpiled.js
 ### 1. 安装依赖
 
 ```sh
-npm install --save-dev @babel/core @babel/cli @babel/preset-env @babel/preset-typescript
+pnpm install --save-dev @babel/core @babel/cli @babel/preset-env @babel/preset-typescript
 ```
 
 ### 2. 配置 babel.config.js
@@ -83,7 +83,7 @@ npx babel src/ts_demo.ts -o src/ts_demo.transpiled.js
 ### 1. 安装依赖
 
 ```sh
-npm install --save-dev @babel/core @babel/preset-env vue-loader vue-template-compiler
+pnpm install --save-dev @babel/core @babel/preset-env vue-loader vue-template-compiler
 ```
 
 ### 2. 配置 babel.config.js

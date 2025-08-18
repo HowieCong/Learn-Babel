@@ -1,24 +1,15 @@
-import { fileURLToPath } from 'url';
-import { dirname } from 'path';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
-export default {
-  entry: "./src/index.js",
-  output: {
-    filename: "bundle.js",
-    path: __dirname + "/dist",
-  },
+module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: "babel-loader",
-        },
+        test: /\.vue$/,
+        loader: "vue-loader"
       },
-    ],
-  },
+      {
+        test: /\.js$/,
+        loader: "babel-loader",
+        exclude: /node_modules/
+      }
+    ]
+  }
 };
