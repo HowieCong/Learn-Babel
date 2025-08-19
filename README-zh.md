@@ -206,3 +206,5 @@ node 02_babel_install_and_run.transpiled.js
 3. 分享你的学习经验到讨论区
 
 让我们一起完善这份 Babel 学习指南！
+
+> 如果本项目对你有帮助，欢迎点个 ⭐️ Star 支持一下！
