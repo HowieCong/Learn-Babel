@@ -1,6 +1,6 @@
 # Learn-Babel (English Documentation)
 
-Language: [🇺🇸 English](./README.md) | [🇨🇳 中文](./README-zh.md)
+Language: [🇺🇸 English]| [🇨🇳 中文](./README-zh.md)
 
 ---
 
