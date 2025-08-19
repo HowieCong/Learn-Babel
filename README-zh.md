@@ -160,7 +160,7 @@ node 02_babel_install_and_run.transpiled.js
      - TypeScript 需添加 `@babel/preset-typescript`
      - Vue 需配合 `vue-loader` 处理单文件组件
 
-### 阶段4：性能优化与调试（2-3天）
+### 阶段4：性能优化与调试
 - 阅读 `12_babel_performance_debug_tips.md`，实践：
   - 配置 `only` 和 `ignore` 减少转译范围
   - 启用 Babel 缓存提升构建速度
@@ -196,8 +196,13 @@ node 02_babel_install_and_run.transpiled.js
 
 ## 参与贡献
 如果发现示例代码有问题，或有更好的学习案例，欢迎：
-1. 提交 Issue 反馈问题
-2. 发起 Pull Request 补充内容
+
+1. [提交 Issue 反馈问题](https://github.com/HowieCong/Learn-Babel/issues/new)
+2. [发起 Pull Request 补充内容](https://github.com/HowieCong/Learn-Babel/compare)  
+   - 建议先阅读 [`CONTRIBUTING.md`](./CONTRIBUTING.md)（如无则可在 PR 中提出改进建议），按照规范提交你的更改。
+   - PR 标题请简明扼要，描述清楚你的修改内容和动机。
+   - 如有代码变更，请尽量附带简单的测试或用例说明。
+
 3. 分享你的学习经验到讨论区
 
 让我们一起完善这份 Babel 学习指南！
