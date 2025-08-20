@@ -1,5 +1,7 @@
 # Contributor Covenant Code of Conduct
 
+# [查看贡献者公约行为准则](#贡献者公约行为准则)
+
 ## Our Pledge
 
 We as members, contributors, and leaders pledge to make participation in our community a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, religion, or sexual identity and orientation.
@@ -39,6 +41,8 @@ Instances of abusive, harassing, or otherwise unacceptable behavior may be repor
 ---
 
 # 贡献者公约行为准则
+
+# [View Contributor Covenant Code of Conduct](#contributor-covenant-code-of-conduct)
 
 ## 我们的承诺
 
