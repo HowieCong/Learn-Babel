@@ -80,27 +80,26 @@ node 02_babel_install_and_run.transpiled.js
   ```
 
 ---
-
 ## 目录结构详解
 | 文件/目录 | 说明 | 适合学习阶段 |
 |----------|------|------------|
-| `01_babel_intro.js` | Babel 基础概念讲解，包含中英对照注释 | 入门 |
-| `02_babel_install_and_run.js` | 安装与基本使用全流程，附带终端命令 | 入门 |
-| `03_babel_config_explain.md` | 配置文件详解（.babelrc vs babel.config.js） | 基础 |
-| `04_babel_preset_plugin_demo.js` | 预设与插件实战，含转译产物对比 | 基础 |
-| `05_babel_polyfill_demo.js` | Polyfill 配置方案，core-js 用法示例 | 进阶 |
-| `06_babel_with_webpack_demo.md` | Webpack 集成指南，含配置文件说明 | 进阶 |
-| `07_babel_with_vite_demo.md` | Vite 集成指南，开发服务器配置 | 进阶 |
-| `08_babel_ast_basic.md` | AST 语法树基础，附带可视化工具教程 | 高阶 |
-| `09_babel_plugin_easy_demo.js` | 简单插件开发（变量名替换） | 高阶 |
-| `10_babel_plugin_advanced_demo.js` | 进阶插件开发（自动加日志） | 高阶 |
-| `11_babel_ai_audit_case_demo.js` | AI 审计插件案例（注释解析+类型校验） | 实战 |
-| `12_babel_performance_debug_tips.md` | 性能优化与调试技巧汇总 | 实战 |
-| `13_babel_with_framework_demo.md` | 框架集成指南（React/TS/Vue） | 实战 |
-| `babel.config.js` | 全局 Babel 配置文件（ESModule 语法） | 全阶段 |
-| `webpack.config.js` | Webpack 配置文件 | 构建集成 |
-| `src/` | 源码目录，含各场景测试文件 | 全阶段 |
-| `dist/` | Webpack 打包输出目录 | 构建集成 |
+| [`01_babel_intro.js`](https://github.com/HowieCong/Learn-Babel/blob/main/01_babel_intro.js) | Babel 基础概念讲解，包含中英对照注释 | 入门 |
+| [`02_babel_install_and_run.js`](https://github.com/HowieCong/Learn-Babel/blob/main/02_babel_install_and_run.js) | 安装与基本使用全流程，附带终端命令 | 入门 |
+| [`03_babel_config_explain.md`](https://github.com/HowieCong/Learn-Babel/blob/main/03_babel_config_explain.md) | 配置文件详解（.babelrc vs babel.config.js） | 基础 |
+| [`04_babel_preset_plugin_demo.js`](https://github.com/HowieCong/Learn-Babel/blob/main/04_babel_preset_plugin_demo.js) | 预设与插件实战，含转译产物对比 | 基础 |
+| [`05_babel_polyfill_demo.js`](https://github.com/HowieCong/Learn-Babel/blob/main/05_babel_polyfill_demo.js) | Polyfill 配置方案，core-js 用法示例 | 进阶 |
+| [`06_babel_with_webpack_demo.md`](https://github.com/HowieCong/Learn-Babel/blob/main/06_babel_with_webpack_demo.md) | Webpack 集成指南，含配置文件说明 | 进阶 |
+| [`07_babel_with_vite_demo.md`](https://github.com/HowieCong/Learn-Babel/blob/main/07_babel_with_vite_demo.md) | Vite 集成指南，开发服务器配置 | 进阶 |
+| [`08_babel_ast_basic.md`](https://github.com/HowieCong/Learn-Babel/blob/main/08_babel_ast_basic.md) | AST 语法树基础，附带可视化工具教程 | 高阶 |
+| [`09_babel_plugin_easy_demo.js`](https://github.com/HowieCong/Learn-Babel/blob/main/09_babel_plugin_easy_demo.js) | 简单插件开发（变量名替换） | 高阶 |
+| [`10_babel_plugin_advanced_demo.js`](https://github.com/HowieCong/Learn-Babel/blob/main/10_babel_plugin_advanced_demo.js) | 进阶插件开发（自动加日志） | 高阶 |
+| [`11_babel_ai_audit_case_demo.js`](https://github.com/HowieCong/Learn-Babel/blob/main/11_babel_ai_audit_case_demo.js) | AI 审计插件案例（注释解析+类型校验） | 实战 |
+| [`12_babel_performance_debug_tips.md`](https://github.com/HowieCong/Learn-Babel/blob/main/12_babel_performance_debug_tips.md) | 性能优化与调试技巧汇总 | 实战 |
+| [`13_babel_with_framework_demo.md`](https://github.com/HowieCong/Learn-Babel/blob/main/13_babel_with_framework_demo.md) | 框架集成指南（React/TS/Vue） | 实战 |
+| [`babel.config.js`](https://github.com/HowieCong/Learn-Babel/blob/main/babel.config.js) | 全局 Babel 配置文件（ESModule 语法） | 全阶段 |
+| [`webpack.config.js`](https://github.com/HowieCong/Learn-Babel/blob/main/webpack.config.js) | Webpack 配置文件 | 构建集成 |
+| [`src/`](https://github.com/HowieCong/Learn-Babel/tree/main/src) | 源码目录，含各场景测试文件 | 全阶段 |
+| [`dist/`](https://github.com/HowieCong/Learn-Babel/tree/main/dist) | Webpack 打包输出目录 | 构建集成 |
 
 ---
 
