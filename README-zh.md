@@ -63,21 +63,21 @@ node 02_babel_install_and_run.transpiled.js
 
 ### 步骤4：体验构建工具集成
 - **Webpack 打包体验**：
-  ```bash
-  # 执行打包命令
-  pnpm exec webpack
-  
-  # 运行打包产物
-  node dist/bundle.js
-  ```
+   ```bash
+   # 执行打包命令
+   pnpm exec webpack
+   
+   # 运行打包产物
+   node dist/bundle.js
+   ```
 
 - **Vite 开发服务体验**：
-  ```bash
-  # 启动开发服务器
-  pnpm exec vite
-  
-  # 打开浏览器访问提示的地址（通常是 http://localhost:5173）
-  ```
+   ```bash
+   # 启动开发服务器
+   pnpm exec vite
+   
+   # 打开浏览器访问提示的地址（通常是 http://localhost:5173）
+   ```
 
 ---
 ## 目录结构详解
@@ -106,82 +106,82 @@ node 02_babel_install_and_run.transpiled.js
 ## 分阶段学习指南
 
 ### 阶段1：Babel 基础入门
-1. **理解核心作用**：阅读 `01_babel_intro.js`，运行代码观察转译效果
-   ```bash
-   # 查看转译前后的箭头函数变化
-   npx babel 01_babel_intro.js -o 01_babel_intro.transpiled.js
-   ```
+1. **理解核心作用**：阅读 [`01_babel_intro.js`](https://github.com/HowieCong/Learn-Babel/blob/main/01_babel_intro.js)，运行代码观察转译效果
+    ```bash
+    # 查看转译前后的箭头函数变化
+    npx babel 01_babel_intro.js -o 01_babel_intro.transpiled.js
+    ```
 
-2. **掌握安装与运行**：按照 `02_babel_install_and_run.js` 中的步骤操作，重点理解：
-   - 依赖包的作用（@babel/core 是核心，@babel/cli 是命令行工具）
-   - 转译命令的参数含义（-o 表示输出文件）
+2. **掌握安装与运行**：按照 [`02_babel_install_and_run.js`](https://github.com/HowieCong/Learn-Babel/blob/main/02_babel_install_and_run.js) 中的步骤操作，重点理解：
+    - 依赖包的作用（@babel/core 是核心，@babel/cli 是命令行工具）
+    - 转译命令的参数含义（-o 表示输出文件）
 
-3. **学会配置文件**：阅读 `03_babel_config_explain.md` 后，尝试修改配置：
-   ```js
-   // 在 babel.config.js 中添加插件
-   export default {
-     presets: ['@babel/preset-env'],
-     plugins: ['@babel/plugin-transform-template-literals'] // 新增模板字符串转译插件
-   }
-   ```
-   重新运行转译命令，观察代码变化。
+3. **学会配置文件**：阅读 [`03_babel_config_explain.md`](https://github.com/HowieCong/Learn-Babel/blob/main/03_babel_config_explain.md) 后，尝试修改配置：
+    ```js
+    // 在 babel.config.js 中添加插件
+    export default {
+       presets: ['@babel/preset-env'],
+       plugins: ['@babel/plugin-transform-template-literals'] // 新增模板字符串转译插件
+    }
+    ```
+    重新运行转译命令，观察代码变化。
 
 ### 阶段2：进阶特性与集成
 1. **预设与插件实战**：
-   - 打开 `04_babel_preset_plugin_demo.js`，查看不同插件的作用
-   - 尝试注释/启用不同插件，对比转译结果
+    - 打开 [`04_babel_preset_plugin_demo.js`](https://github.com/HowieCong/Learn-Babel/blob/main/04_babel_preset_plugin_demo.js)，查看不同插件的作用
+    - 尝试注释/启用不同插件，对比转译结果
 
 2. **Polyfill 兼容性处理**：
-   - 学习 `05_babel_polyfill_demo.js` 中的 core-js 配置
-   - 理解 `useBuiltIns: 'usage'` 的自动按需引入原理
+    - 学习 [`05_babel_polyfill_demo.js`](https://github.com/HowieCong/Learn-Babel/blob/main/05_babel_polyfill_demo.js) 中的 core-js 配置
+    - 理解 `useBuiltIns: 'usage'` 的自动按需引入原理
 
 3. **构建工具集成**：
-   - Webpack 集成：按照 `06_babel_with_webpack_demo.md` 配置，重点理解 `babel-loader` 的作用
-   - Vite 集成：通过 `07_babel_with_vite_demo.md` 了解开发环境与生产环境的差异
+    - Webpack 集成：按照 [`06_babel_with_webpack_demo.md`](https://github.com/HowieCong/Learn-Babel/blob/main/06_babel_with_webpack_demo.md) 配置，重点理解 `babel-loader` 的作用
+    - Vite 集成：通过 [`07_babel_with_vite_demo.md`](https://github.com/HowieCong/Learn-Babel/blob/main/07_babel_with_vite_demo.md) 了解开发环境与生产环境的差异
 
 ### 阶段3：插件开发与实战
 1. **AST 基础学习**：
-   - 阅读 `08_babel_ast_basic.md`，配合 [AST Explorer](https://astexplorer.net/) 工具
-   - 练习识别不同语法对应的 AST 节点结构
+    - 阅读 [`08_babel_ast_basic.md`](https://github.com/HowieCong/Learn-Babel/blob/main/08_babel_ast_basic.md)，配合 [AST Explorer](https://astexplorer.net/) 工具
+    - 练习识别不同语法对应的 AST 节点结构
 
 2. **插件开发实战**：
-   - 简单插件：研究 `src/my-babel-plugin.js`，学习变量名替换逻辑
-   - 进阶插件：分析 `src/my-advanced-babel-plugin.js`，理解函数遍历与日志插入原理
-   - 运行测试：
-     ```bash
-     # 测试进阶插件
-     npx babel src/advanced_plugin_test.js --plugins ./src/my-advanced-babel-plugin.js -o test.transpiled.js
-     ```
+    - 简单插件：研究 [`src/my-babel-plugin.js`](https://github.com/HowieCong/Learn-Babel/blob/main/src/my-babel-plugin.js)，学习变量名替换逻辑
+    - 进阶插件：分析 [`src/my-advanced-babel-plugin.js`](https://github.com/HowieCong/Learn-Babel/blob/main/src/my-advanced-babel-plugin.js)，理解函数遍历与日志插入原理
+    - 运行测试：
+       ```bash
+       # 测试进阶插件
+       npx babel src/advanced_plugin_test.js --plugins ./src/my-advanced-babel-plugin.js -o test.transpiled.js
+       ```
 
 3. **框架集成**：
-   - 按照 `13_babel_with_framework_demo.md` 配置：
-     - React 需添加 `@babel/preset-react`
-     - TypeScript 需添加 `@babel/preset-typescript`
-     - Vue 需配合 `vue-loader` 处理单文件组件
+    - 按照 [`13_babel_with_framework_demo.md`](https://github.com/HowieCong/Learn-Babel/blob/main/13_babel_with_framework_demo.md) 配置：
+       - React 需添加 `@babel/preset-react`
+       - TypeScript 需添加 `@babel/preset-typescript`
+       - Vue 需配合 `vue-loader` 处理单文件组件
 
 ### 阶段4：性能优化与调试
-- 阅读 `12_babel_performance_debug_tips.md`，实践：
-  - 配置 `only` 和 `ignore` 减少转译范围
-  - 启用 Babel 缓存提升构建速度
-  - 使用 `babel-plugin-tester` 编写插件测试
+- 阅读 [`12_babel_performance_debug_tips.md`](https://github.com/HowieCong/Learn-Babel/blob/main/12_babel_performance_debug_tips.md)，实践：
+   - 配置 `only` 和 `ignore` 减少转译范围
+   - 启用 Babel 缓存提升构建速度
+   - 使用 `babel-plugin-tester` 编写插件测试
 
 ---
 
 ## 常见问题解决
 
 1. **转译后代码没有变化？**
-   - 检查配置文件是否正确（路径、语法是否匹配项目的 type: module）
-   - 确认是否安装了对应的 preset 或 plugin
-   - 查看命令行是否有报错信息
+    - 检查配置文件是否正确（路径、语法是否匹配项目的 type: module）
+    - 确认是否安装了对应的 preset 或 plugin
+    - 查看命令行是否有报错信息
 
 2. **Polyfill 引入重复？**
-   - 确保只在一个地方配置 `useBuiltIns`（要么在 preset-env 中，要么用单独的 polyfill 引入）
-   - 检查 core-js 版本是否统一
+    - 确保只在一个地方配置 `useBuiltIns`（要么在 preset-env 中，要么用单独的 polyfill 引入）
+    - 检查 core-js 版本是否统一
 
 3. **与框架集成时语法报错？**
-   - React JSX 需确保 `@babel/preset-react` 已配置
-   - TypeScript 需确认 `@babel/preset-typescript` 安装正确
-   - Vue 单文件组件需配合 `vue-loader` 和 `@vitejs/plugin-vue`（Vite 环境）
+    - React JSX 需确保 `@babel/preset-react` 已配置
+    - TypeScript 需确认 `@babel/preset-typescript` 安装正确
+    - Vue 单文件组件需配合 `vue-loader` 和 `@vitejs/plugin-vue`（Vite 环境）
 
 ---
 
@@ -198,9 +198,9 @@ node 02_babel_install_and_run.transpiled.js
 
 1. [提交 Issue 反馈问题](https://github.com/HowieCong/Learn-Babel/issues/new)
 2. [发起 Pull Request 补充内容](https://github.com/HowieCong/Learn-Babel/compare)  
-   - 建议先阅读 [`CONTRIBUTING.md`](./CONTRIBUTING.md)（如无则可在 PR 中提出改进建议），按照规范提交你的更改。
-   - PR 标题请简明扼要，描述清楚你的修改内容和动机。
-   - 如有代码变更，请尽量附带简单的测试或用例说明。
+    - 建议先阅读 [`CONTRIBUTING.md`](https://github.com/HowieCong/Learn-Babel/blob/main/CONTRIBUTING.md)（如无则可在 PR 中提出改进建议），按照规范提交你的更改。
+    - PR 标题请简明扼要，描述清楚你的修改内容和动机。
+    - 如有代码变更，请尽量附带简单的测试或用例说明。
 
 3. 分享你的学习经验到讨论区
 
